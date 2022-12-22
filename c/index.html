@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>C 语言入门 | learn FE</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="manifest" href="/learn-FE/manifest.webmanifest">
+    <link rel="icon" href="/learn-FE/favicon.ico">
+    <link rel="apple-touch-icon" href="/learn-FE/icons/apple-touch-icon-192x192.png">
+    <link rel="mask-icon" href="/learn-FE/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?2fbee6c26bfab2847b77615fc879c3ac";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script> 
+        </script>
+    <meta name="description" content="每天学习前端一点点🤏">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="charset" content="UTF-8">
+    <meta name="theme-color" content="#3178c6">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="green">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/learn-FE/assets/css/0.styles.677d2a99.css" as="style"><link rel="preload" href="/learn-FE/assets/js/app.aebeae26.js" as="script"><link rel="preload" href="/learn-FE/assets/js/8.e87f47a6.js" as="script"><link rel="preload" href="/learn-FE/assets/js/1.58730aa2.js" as="script"><link rel="preload" href="/learn-FE/assets/js/147.03b197c6.js" as="script"><link rel="preload" href="/learn-FE/assets/js/50.3966f648.js" as="script"><link rel="prefetch" href="/learn-FE/assets/js/10.84db1555.js"><link rel="prefetch" href="/learn-FE/assets/js/100.51578e06.js"><link rel="prefetch" href="/learn-FE/assets/js/101.0b6bd506.js"><link rel="prefetch" href="/learn-FE/assets/js/102.790157aa.js"><link rel="prefetch" href="/learn-FE/assets/js/103.b9eaad8d.js"><link rel="prefetch" href="/learn-FE/assets/js/104.bd8835a9.js"><link rel="prefetch" href="/learn-FE/assets/js/105.3949634b.js"><link rel="prefetch" href="/learn-FE/assets/js/106.cf63db8e.js"><link rel="prefetch" href="/learn-FE/assets/js/107.8a71ccd5.js"><link rel="prefetch" href="/learn-FE/assets/js/108.a84ecbbd.js"><link rel="prefetch" href="/learn-FE/assets/js/109.4f9b0cef.js"><link rel="prefetch" href="/learn-FE/assets/js/11.fc6d9f69.js"><link rel="prefetch" href="/learn-FE/assets/js/110.8bb96a13.js"><link rel="prefetch" href="/learn-FE/assets/js/111.d4f9ab28.js"><link rel="prefetch" href="/learn-FE/assets/js/112.143a5d7c.js"><link rel="prefetch" href="/learn-FE/assets/js/113.30b10309.js"><link rel="prefetch" href="/learn-FE/assets/js/114.1bb09c1c.js"><link rel="prefetch" href="/learn-FE/assets/js/115.f875bdf0.js"><link rel="prefetch" href="/learn-FE/assets/js/116.7e6eb42e.js"><link rel="prefetch" href="/learn-FE/assets/js/117.7fe5d3b8.js"><link rel="prefetch" href="/learn-FE/assets/js/118.9555883e.js"><link rel="prefetch" href="/learn-FE/assets/js/119.212c2781.js"><link rel="prefetch" href="/learn-FE/assets/js/12.d6abf547.js"><link rel="prefetch" href="/learn-FE/assets/js/120.71cf550f.js"><link rel="prefetch" href="/learn-FE/assets/js/121.4f5e6315.js"><link rel="prefetch" href="/learn-FE/assets/js/122.060615a7.js"><link rel="prefetch" href="/learn-FE/assets/js/123.3eb5e2a2.js"><link rel="prefetch" href="/learn-FE/assets/js/124.00eaa498.js"><link rel="prefetch" href="/learn-FE/assets/js/125.802be12c.js"><link rel="prefetch" href="/learn-FE/assets/js/126.43d37968.js"><link rel="prefetch" href="/learn-FE/assets/js/127.78887080.js"><link rel="prefetch" href="/learn-FE/assets/js/128.45fa1ab7.js"><link rel="prefetch" href="/learn-FE/assets/js/129.1f115b90.js"><link rel="prefetch" href="/learn-FE/assets/js/13.bbd4a383.js"><link rel="prefetch" href="/learn-FE/assets/js/130.175f34b2.js"><link rel="prefetch" href="/learn-FE/assets/js/131.1a5b2c1a.js"><link rel="prefetch" href="/learn-FE/assets/js/132.36c5f8f7.js"><link rel="prefetch" href="/learn-FE/assets/js/133.f825e0c3.js"><link rel="prefetch" href="/learn-FE/assets/js/134.fa895f1a.js"><link rel="prefetch" href="/learn-FE/assets/js/135.347317d9.js"><link rel="prefetch" href="/learn-FE/assets/js/136.14d927f6.js"><link rel="prefetch" href="/learn-FE/assets/js/137.c56c8e4b.js"><link rel="prefetch" href="/learn-FE/assets/js/138.13cf9ffc.js"><link rel="prefetch" href="/learn-FE/assets/js/139.ee3efe66.js"><link rel="prefetch" href="/learn-FE/assets/js/14.c5f0a2e1.js"><link rel="prefetch" href="/learn-FE/assets/js/140.405794db.js"><link rel="prefetch" href="/learn-FE/assets/js/141.50f28bce.js"><link rel="prefetch" href="/learn-FE/assets/js/142.36aae559.js"><link rel="prefetch" href="/learn-FE/assets/js/143.544191e4.js"><link rel="prefetch" href="/learn-FE/assets/js/144.d63faf89.js"><link rel="prefetch" href="/learn-FE/assets/js/145.66c29e29.js"><link rel="prefetch" href="/learn-FE/assets/js/146.f2c4ceaf.js"><link rel="prefetch" href="/learn-FE/assets/js/148.b6c30216.js"><link rel="prefetch" href="/learn-FE/assets/js/149.fd4e7558.js"><link rel="prefetch" href="/learn-FE/assets/js/15.113e185a.js"><link rel="prefetch" href="/learn-FE/assets/js/150.39648b41.js"><link rel="prefetch" href="/learn-FE/assets/js/151.76b9cc8a.js"><link rel="prefetch" href="/learn-FE/assets/js/152.c7b433be.js"><link rel="prefetch" href="/learn-FE/assets/js/153.79bcfb78.js"><link rel="prefetch" href="/learn-FE/assets/js/154.a4740142.js"><link rel="prefetch" href="/learn-FE/assets/js/155.1c6e6463.js"><link rel="prefetch" href="/learn-FE/assets/js/156.572a40a6.js"><link rel="prefetch" href="/learn-FE/assets/js/157.9f34a9e3.js"><link rel="prefetch" href="/learn-FE/assets/js/158.1cd7fea4.js"><link rel="prefetch" href="/learn-FE/assets/js/159.563368b9.js"><link rel="prefetch" href="/learn-FE/assets/js/16.d64a5877.js"><link rel="prefetch" href="/learn-FE/assets/js/160.86d4d82c.js"><link rel="prefetch" href="/learn-FE/assets/js/161.a5026ab1.js"><link rel="prefetch" href="/learn-FE/assets/js/162.dcfa2681.js"><link rel="prefetch" href="/learn-FE/assets/js/163.02dff922.js"><link rel="prefetch" href="/learn-FE/assets/js/164.61f72a79.js"><link rel="prefetch" href="/learn-FE/assets/js/165.73b61399.js"><link rel="prefetch" href="/learn-FE/assets/js/166.3895ac13.js"><link rel="prefetch" href="/learn-FE/assets/js/167.371d90c4.js"><link rel="prefetch" href="/learn-FE/assets/js/168.7333590a.js"><link rel="prefetch" href="/learn-FE/assets/js/169.0316e14a.js"><link rel="prefetch" href="/learn-FE/assets/js/17.6d233685.js"><link rel="prefetch" href="/learn-FE/assets/js/170.42315d61.js"><link rel="prefetch" href="/learn-FE/assets/js/171.dd9e36b7.js"><link rel="prefetch" href="/learn-FE/assets/js/172.98200a0b.js"><link rel="prefetch" href="/learn-FE/assets/js/173.4d3df67b.js"><link rel="prefetch" href="/learn-FE/assets/js/174.76090d9c.js"><link rel="prefetch" href="/learn-FE/assets/js/175.4b530fac.js"><link rel="prefetch" href="/learn-FE/assets/js/176.2d86401a.js"><link rel="prefetch" href="/learn-FE/assets/js/177.c8728af2.js"><link rel="prefetch" href="/learn-FE/assets/js/178.8e2147da.js"><link rel="prefetch" href="/learn-FE/assets/js/179.12b020e2.js"><link rel="prefetch" href="/learn-FE/assets/js/18.e2c4e078.js"><link rel="prefetch" href="/learn-FE/assets/js/180.336727ab.js"><link rel="prefetch" href="/learn-FE/assets/js/181.9ac7b8d5.js"><link rel="prefetch" href="/learn-FE/assets/js/182.cde679cb.js"><link rel="prefetch" href="/learn-FE/assets/js/183.ad460bf8.js"><link rel="prefetch" href="/learn-FE/assets/js/184.7e10cac4.js"><link rel="prefetch" href="/learn-FE/assets/js/185.b0b4adb4.js"><link rel="prefetch" href="/learn-FE/assets/js/186.2a4a4328.js"><link rel="prefetch" href="/learn-FE/assets/js/187.0f3f085e.js"><link rel="prefetch" href="/learn-FE/assets/js/188.1cc003ac.js"><link rel="prefetch" href="/learn-FE/assets/js/189.2a4439aa.js"><link rel="prefetch" href="/learn-FE/assets/js/19.fdbab0eb.js"><link rel="prefetch" href="/learn-FE/assets/js/190.aad2f904.js"><link rel="prefetch" href="/learn-FE/assets/js/191.b4141e0a.js"><link rel="prefetch" href="/learn-FE/assets/js/20.ae6183fd.js"><link rel="prefetch" href="/learn-FE/assets/js/21.5efa79f7.js"><link rel="prefetch" href="/learn-FE/assets/js/22.3bc66adf.js"><link rel="prefetch" href="/learn-FE/assets/js/23.cc47eb61.js"><link rel="prefetch" href="/learn-FE/assets/js/24.fc4e932d.js"><link rel="prefetch" href="/learn-FE/assets/js/25.8e275e5a.js"><link rel="prefetch" href="/learn-FE/assets/js/26.383e9dd3.js"><link rel="prefetch" href="/learn-FE/assets/js/27.9406ad59.js"><link rel="prefetch" href="/learn-FE/assets/js/28.92cff306.js"><link rel="prefetch" href="/learn-FE/assets/js/29.6a94bb4c.js"><link rel="prefetch" href="/learn-FE/assets/js/3.4bacb649.js"><link rel="prefetch" href="/learn-FE/assets/js/30.7eb23e8c.js"><link rel="prefetch" href="/learn-FE/assets/js/31.135c043c.js"><link rel="prefetch" href="/learn-FE/assets/js/32.9d6c7536.js"><link rel="prefetch" href="/learn-FE/assets/js/33.b36f94f3.js"><link rel="prefetch" href="/learn-FE/assets/js/34.b3e10afe.js"><link rel="prefetch" href="/learn-FE/assets/js/35.59407be9.js"><link rel="prefetch" href="/learn-FE/assets/js/36.bc306370.js"><link rel="prefetch" href="/learn-FE/assets/js/37.9b1a95ac.js"><link rel="prefetch" href="/learn-FE/assets/js/38.54483869.js"><link rel="prefetch" href="/learn-FE/assets/js/39.d9e07c08.js"><link rel="prefetch" href="/learn-FE/assets/js/4.89c92f09.js"><link rel="prefetch" href="/learn-FE/assets/js/40.82d7c5b0.js"><link rel="prefetch" href="/learn-FE/assets/js/41.584e31a5.js"><link rel="prefetch" href="/learn-FE/assets/js/42.1e1570da.js"><link rel="prefetch" href="/learn-FE/assets/js/43.0b45d3b5.js"><link rel="prefetch" href="/learn-FE/assets/js/44.11f0756e.js"><link rel="prefetch" href="/learn-FE/assets/js/45.56d1a9a1.js"><link rel="prefetch" href="/learn-FE/assets/js/46.f0eadb5b.js"><link rel="prefetch" href="/learn-FE/assets/js/47.7330f1a5.js"><link rel="prefetch" href="/learn-FE/assets/js/48.61a5d234.js"><link rel="prefetch" href="/learn-FE/assets/js/49.051d6601.js"><link rel="prefetch" href="/learn-FE/assets/js/5.5cd3afb6.js"><link rel="prefetch" href="/learn-FE/assets/js/51.f9d69d33.js"><link rel="prefetch" href="/learn-FE/assets/js/52.21f3da14.js"><link rel="prefetch" href="/learn-FE/assets/js/53.31b56321.js"><link rel="prefetch" href="/learn-FE/assets/js/54.74b9764e.js"><link rel="prefetch" href="/learn-FE/assets/js/55.ba4c4608.js"><link rel="prefetch" href="/learn-FE/assets/js/56.126cacac.js"><link rel="prefetch" href="/learn-FE/assets/js/57.66070932.js"><link rel="prefetch" href="/learn-FE/assets/js/58.31ab0b20.js"><link rel="prefetch" href="/learn-FE/assets/js/59.747ba11d.js"><link rel="prefetch" href="/learn-FE/assets/js/6.8cadd153.js"><link rel="prefetch" href="/learn-FE/assets/js/60.367a6de8.js"><link rel="prefetch" href="/learn-FE/assets/js/61.287c25ad.js"><link rel="prefetch" href="/learn-FE/assets/js/62.8e97f5dd.js"><link rel="prefetch" href="/learn-FE/assets/js/63.2c496aea.js"><link rel="prefetch" href="/learn-FE/assets/js/64.69c82306.js"><link rel="prefetch" href="/learn-FE/assets/js/65.d46d03d1.js"><link rel="prefetch" href="/learn-FE/assets/js/66.aa2c5617.js"><link rel="prefetch" href="/learn-FE/assets/js/67.7f2bc569.js"><link rel="prefetch" href="/learn-FE/assets/js/68.6ae34cd3.js"><link rel="prefetch" href="/learn-FE/assets/js/69.8f58f9bc.js"><link rel="prefetch" href="/learn-FE/assets/js/7.081d849f.js"><link rel="prefetch" href="/learn-FE/assets/js/70.73178323.js"><link rel="prefetch" href="/learn-FE/assets/js/71.57166912.js"><link rel="prefetch" href="/learn-FE/assets/js/72.42b8dc78.js"><link rel="prefetch" href="/learn-FE/assets/js/73.944e1540.js"><link rel="prefetch" href="/learn-FE/assets/js/74.08814865.js"><link rel="prefetch" href="/learn-FE/assets/js/75.8534da7a.js"><link rel="prefetch" href="/learn-FE/assets/js/76.46dc4d6c.js"><link rel="prefetch" href="/learn-FE/assets/js/77.fa29c28e.js"><link rel="prefetch" href="/learn-FE/assets/js/78.0e9dc8fc.js"><link rel="prefetch" href="/learn-FE/assets/js/79.9207efc1.js"><link rel="prefetch" href="/learn-FE/assets/js/80.dad63698.js"><link rel="prefetch" href="/learn-FE/assets/js/81.20c73b8b.js"><link rel="prefetch" href="/learn-FE/assets/js/82.fddc92a8.js"><link rel="prefetch" href="/learn-FE/assets/js/83.72339729.js"><link rel="prefetch" href="/learn-FE/assets/js/84.d0b8213c.js"><link rel="prefetch" href="/learn-FE/assets/js/85.4d0e7cfb.js"><link rel="prefetch" href="/learn-FE/assets/js/86.224e4a60.js"><link rel="prefetch" href="/learn-FE/assets/js/87.43fb543e.js"><link rel="prefetch" href="/learn-FE/assets/js/88.5ea89635.js"><link rel="prefetch" href="/learn-FE/assets/js/89.d29c1700.js"><link rel="prefetch" href="/learn-FE/assets/js/9.8b9b1671.js"><link rel="prefetch" href="/learn-FE/assets/js/90.1455809f.js"><link rel="prefetch" href="/learn-FE/assets/js/91.3656d01e.js"><link rel="prefetch" href="/learn-FE/assets/js/92.a00edf70.js"><link rel="prefetch" href="/learn-FE/assets/js/93.b8d0402d.js"><link rel="prefetch" href="/learn-FE/assets/js/94.94714327.js"><link rel="prefetch" href="/learn-FE/assets/js/95.38ee061b.js"><link rel="prefetch" href="/learn-FE/assets/js/96.9ad629a7.js"><link rel="prefetch" href="/learn-FE/assets/js/97.3a94941a.js"><link rel="prefetch" href="/learn-FE/assets/js/98.e3affa8a.js"><link rel="prefetch" href="/learn-FE/assets/js/99.1fbeb339.js">
+    <link rel="stylesheet" href="/learn-FE/assets/css/0.styles.677d2a99.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-5bb33761><div data-v-5bb33761><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-5bb33761 data-v-5bb33761><h3 class="title" data-v-59e6cb88>learn FE</h3> <p class="description" data-v-59e6cb88>每天学习前端一点点🤏</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><!---->
+          
+        <!---->
+        2022
+      </a></span></div></div> <div class="hide" data-v-5bb33761><header class="navbar" data-v-5bb33761><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/learn-FE/" class="home-link router-link-active"><!----> <span class="site-name">learn FE</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/learn-FE/" class="nav-link"><i class="undefined"></i>
+  HOME
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      FE-Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learn-FE/FE/Javascript/原型和原型链.html" class="nav-link"><i class="undefined"></i>
+  前端基础知识
+</a></li><li class="dropdown-item"><!----> <a href="/learn-FE/TDD/TDD.html" class="nav-link"><i class="undefined"></i>
+  TDD
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      📖DayRead
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learn-FE/DayLiRead/BEYOUR/day01.html" class="nav-link"><i class="undefined"></i>
+  做自己的心理医生
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      毕业论文
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learn-FE/毕业论文/技术调研.html" class="nav-link"><i class="undefined"></i>
+  毕业论文
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      VUE
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learn-FE/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/learn-FE/vue-router/" class="nav-link"><i class="undefined"></i>
+  vueRouter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      三亚
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learn-FE/三亚/hotel.html" class="nav-link"><i class="undefined"></i>
+  酒店🏨
+</a></li><li class="dropdown-item"><!----> <a href="/learn-FE/三亚/place.html" class="nav-link"><i class="undefined"></i>
+  打卡地点🤳
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      dannyLee的前端学习博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/xxDanny/learn-FE" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="/learn-FE/面试/公司职位.html" class="nav-link"><i class="undefined"></i>
+  Others
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-5bb33761></div> <aside class="sidebar" data-v-5bb33761><div class="personal-info-wrapper" data-v-1fad0c41 data-v-5bb33761><!----> <!----> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>174</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>0</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/learn-FE/" class="nav-link"><i class="undefined"></i>
+  HOME
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      FE-Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learn-FE/FE/Javascript/原型和原型链.html" class="nav-link"><i class="undefined"></i>
+  前端基础知识
+</a></li><li class="dropdown-item"><!----> <a href="/learn-FE/TDD/TDD.html" class="nav-link"><i class="undefined"></i>
+  TDD
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      📖DayRead
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learn-FE/DayLiRead/BEYOUR/day01.html" class="nav-link"><i class="undefined"></i>
+  做自己的心理医生
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      毕业论文
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learn-FE/毕业论文/技术调研.html" class="nav-link"><i class="undefined"></i>
+  毕业论文
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      VUE
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learn-FE/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/learn-FE/vue-router/" class="nav-link"><i class="undefined"></i>
+  vueRouter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      三亚
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learn-FE/三亚/hotel.html" class="nav-link"><i class="undefined"></i>
+  酒店🏨
+</a></li><li class="dropdown-item"><!----> <a href="/learn-FE/三亚/place.html" class="nav-link"><i class="undefined"></i>
+  打卡地点🤳
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      dannyLee的前端学习博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/xxDanny/learn-FE" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="/learn-FE/面试/公司职位.html" class="nav-link"><i class="undefined"></i>
+  Others
+</a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-5bb33761><h3 class="title" data-v-59e6cb88></h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><!---->
+          
+        <!---->
+        2022
+      </a></span></div></div> <div data-v-5bb33761><div data-v-5bb33761><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">C 语言入门</h1> <div data-v-8a445198><!----> <!----> <i class="iconfont reco-eye" data-v-8a445198><span id="/learn-FE/c/" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-8a445198><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <!----></div></div> <div class="theme-reco-content content__default"><h1 id="c-语言入门"><a href="#c-语言入门" class="header-anchor">#</a> C 语言入门</h1> <p><a href="https://chinese.freecodecamp.org/news/the-c-beginners-handbook/" target="_blank" rel="nofollow noopener noreferrer">C 语言入门手册：几小时内就能学会的 C 语言基础<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://wangdoc.com/clang/pointer.html" target="_blank" rel="nofollow noopener noreferrer">C 教程<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://cloud.tencent.com/developer/article/1803522" target="_blank" rel="nofollow noopener noreferrer">VS Code 配置 C 语言开发环境的超详细教程<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>我们如何执行一个 C 程序呢？</p> <p>C 是一门编译型语言。要运行程序，我们必须先编译它。任何 Linux 或 macOS 计算机都自带了 C 编译器。至于 Windows，你可以使用适用于 Linux 的 Windows 子系统（WSL）。</p> <h2 id="变量与类型"><a href="#变量与类型" class="header-anchor">#</a> 变量与类型</h2> <p>C 是一门静态类型语言。</p> <p>这意味着任何变量都有一个相关联的类型，并且该类型在编译时是可知的</p> <p>当你在 C 中创建变量时，你必须在声明中给出该变量的类型。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int a
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>变量名可以包含任意大写或小写字母，也可以包含数字和下划线，但是不能以数字开头。 <code>AGE</code> 和 <code>Age10</code> 都是有效的变量名，但 <code>1age</code> 就不是了。</p> <p>C 的内置数据类型有 int、char、short、long、float、double、long double。咱们进一步了解这些数据类型吧</p> <h3 id="整数"><a href="#整数" class="header-anchor">#</a> 整数</h3> <p>C 给我们提供了下列定义整数的类型：</p> <ul><li>char</li> <li>int</li> <li>short</li> <li>long</li></ul> <p>char 类型通常被用来保存 ASCII 表中的字母，但是它也可以用来保存 -128 到 127 之间的小整数。它占据至少一个字节。</p> <p>int 占据至少两个字节。short 占据至少两个字节。long 占据至少四个字节。</p> <h3 id="无符号整数"><a href="#无符号整数" class="header-anchor">#</a> 无符号整数</h3> <p>对于以上所有的数据类型，我们都可以在其前面追加一个 unsigned。这样一来，值的范围就不再从负数开始，而是从 0 开始。这在很多情况下是很有用的。</p> <ul><li>unsigned char 的范围从 0 开始，至少到 255</li> <li>unsigned int 的范围从 0 开始，至少到 65, 535</li> <li>unsigned short 的范围从 0 开始，至少到 65, 535</li> <li>unsigned long 的范围从 0 开始，至少到 4, 294, 967, 295</li></ul> <h3 id="浮点数"><a href="#浮点数" class="header-anchor">#</a> 浮点数</h3> <ul><li>float</li> <li>double</li> <li>long double</li></ul> <p>是用来表示带有小数点的数字（浮点类型）的。这几种类型都可以表示正数和负数。</p> <p>任何 C 的实现都必须满足的最小要求是 float 可以表示范围在 <code>10^-37</code> 到 <code>10^+37</code> 之间的数，这通常用 32 位比特实现。 double 可以表示一组更大范围的数，long double 可以保存的数还要更多。</p> <p>在现代的 Mac 上，</p> <ul><li><p>float 用 32 位表示，精度为 24 个有效位，剩余 8 位被用来编码指数部分。</p></li> <li><p>double 用 64 位表示，精度为 53 个有效位，剩余 11 为用于编码指数部分。</p></li> <li><p>long double 类型用 80 位表示，精度为 64 位有效位，剩余 15 位被用来编码指数部分。</p></li></ul> <p>使用浮点数时，我们将数表示成小数乘以 10 的幂。</p> <p>你可能见过浮点数被写成</p> <ul><li>1.29e-3</li> <li>-2.3e+5</li></ul> <h2 id="常量"><a href="#常量" class="header-anchor">#</a> 常量</h2> <p>常量的声明与变量类似，不同之处在于常量声明的前面带有 const 关键字，并且你总是需要给常量指定一个值。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const int age = 37;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>常量的命名规则与变量相同：可以包含任意大小写字母、数字和下划线，但是不能以数字开头。AGE 和 Age10 都是有效的变量名，而 1AGE 就不是了。</p> <p>另一种定义常量的方式是使用这种语法：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#define AGE 17
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>在这种情况下，你不需要添加类型，也不需要使用等于符号 =，并且可以省略末尾的分号。</p> <p>C 编译器将会在编译时从声明的值推断出相应的类型。</p> <h2 id="数组"><a href="#数组" class="header-anchor">#</a> 数组</h2> <p>你可以像这样定义一个 int 型的数组：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int age[5]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="字符串"><a href="#字符串" class="header-anchor">#</a> 字符串</h2> <p>在 C 中，字符串是一种特殊的数组：字符串是由 char 值组成的数组：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>char name[7] = { &quot;F&quot;, &quot;l&quot;, &quot;a&quot;, &quot;v&quot;, &quot;i&quot;, &quot;o&quot; };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>或者使用更加方便的字符串字面量（也被称为字符串常量），一组用双引号引起来的字符：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>char name[7] = &quot;Flavio&quot;;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>你可以通过 printf() 打印字符串，使用 %s：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>printf(&quot;%s&quot;, name);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>你有注意到“Flavio”是 6 个字符长，但是我定义了一个长度为 7 的数组吗？这是因为字符串中的最后一个字符必须是 0，它是字符串的终止符号，我们必须给它留个位置</p> <p>记住这个非常重要，尤其是当你操作字符串的时候。</p> <p>说到操作字符串，C 提供了一个非常重要的标准库：string.h</p> <p>这个库是必不可少的，因为它抽象了很多与字符串有关的底层细节，给我们提供了一组非常有用的函数。</p> <p>你可以在程序中加载这个库，需要在文件顶部加上：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#include &lt;string.h&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>一旦你这么做了之后，你就可以访问函数：</p> <ul><li>strcpy()：将一个字符串复制到另一个字符串</li> <li>strcat()：将一个字符串追加到另一个字符串</li> <li>strcmp()：比较两个字符串是否相等</li> <li>strncmp()：比较两个字符串的前 n 个字符</li> <li>strlen()：计算字符串的长度</li></ul> <h2 id="指针"><a href="#指针" class="header-anchor">#</a> 指针</h2> <p>当你像这样声明一个整数时：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int age = 37;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>我们可以使用 &amp; 运算符获取内存中该变量的地址值：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>printf(&quot;%p&quot;, &amp;age); /* 0x7ffeef7dcb9c */
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>当在声明中使用 int *address 时，我们并没有在声明一个整数值，而是在声明一个 指向一个整数的指针</p> <p>我们可以使用指针运算符获取该地址指向的变量的值：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int age = 37;
+int *address = &amp;age;
+printf(&quot;%u&quot;, *address); /* 37 */
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>数组就是一个例子。当你声明一个数组时：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int prices[3] = { 5, 4, 3 };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>prices 变量实际上是一个指向数组首个元素的指针。在这种情况下，你可以使用这个 printf() 函数获取第一个数组元素的值：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>printf(&quot;%u&quot;, *prices); /* 5 */
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="函数"><a href="#函数" class="header-anchor">#</a> 函数</h2> <p>main() 函数是一个非常重要的函数，它是 C 程序的入口点。</p> <p>如果函数没有返回值，你可以在函数名前面使用关键字 void。否则你就要声明该函数的返回值类型（整数为 int，浮点数为 float，字符串为 const char *，等等）。</p> <p>函数返回值的数量不能超过一个。</p> <p>函数可以有参数。它们是可选的。如果函数没有参数，我们就在括号内插入 void，就像这样：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>void doSomething(void) {
+  /* ... */
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>如果有一个参数，我们就声明该参数的类型和名字，就像这样：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>void doSomething(int value) {
+   /* ... */
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>参数是通过 拷贝 传递的。这意味着如果你修改 value1，它的值是在局部作用域内修改的。函数外的那个值，即我们在调用时传入的值，并不会改变。</p> <p>如果你传入的参数为一个 指针，你可以修改该变量的值，因为你现在可以使用它的内存地址直接访问它。</p> <p>你不能为参数定义默认值。C++ 是可以的（Arduino Language 程序也可以），但是 C 不行。</p> <h2 id="输入与输出"><a href="#输入与输出" class="header-anchor">#</a> 输入与输出</h2> <p>是一门小型语言，并且 C 的“内核”并不包含任何输入/输出（I/O）功能。</p> <p>当然，这并不是 C 所独有的。语言内核与 I/O 无关是很常见的。</p> <p>在 C 中，输入/输出由 C 的标准库通过一组定义在 <code>stdio.h</code> 头文件中的函数向我们提供。</p> <p>你可以在 C 文件顶部使用：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#include &lt;stdio.h&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这个库给我们提供了很多其它的函数：</p> <ul><li>printf()</li> <li>scanf()</li> <li>sscanf()</li> <li>fgets()</li> <li>fprintf()</li></ul> <p>在描述这个函数干啥之前，我想先花一分钟讲一下 I/O 流。</p> <p>在 C 中，我们有三种类型的 I/O 流：</p> <ul><li>stdin（标准输入）</li> <li>stdout（标准输出）</li> <li>stderr（标准错误）</li></ul> <p>printf() 是你在学习 C 编程时最先使用的函数之一。</p> <p>在它最简单的使用形式中，你给它传递一个字符串字面量：</p> <p>你可以打印一个变量的值。但是这有点棘手，因为你需要添加一个特殊的字符，一个占位符，它会根据变量的类型变化。例如，我们为有符号十进制整数使用 %d：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int age = 37;
+
+printf(&quot;My age is %d&quot;, age);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>通过使用逗号，我现在可以打印多个变量：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int age_yesterday = 37;
+int age_today = 36;
+
+printf(&quot;Yesterday my age was %d and today is %d&quot;, age_yesterday, age_today);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>还有其它像 %d 一样的格式指示符：</p> <ul><li>%c 用于字符</li> <li>%s 用于字符串</li> <li>%f 用于浮点数</li> <li>%p 用于指针</li></ul> <h3 id="scanf"><a href="#scanf" class="header-anchor">#</a> scanf()</h3> <p>我们必须先定义一个变量，它将被用来存放我们从输入中获取的值：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int age
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>然后我们调用 scanf()，传入两个参数：变量的格式（类型），和变量的地址：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>scanf('%d',&amp;age)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>如果我们想在输入时获取一个字符串，还记得字符串名是一个指向第一个字符的指针，所以你不需要在它前面加上 &amp;：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>char name[20];
+scanf(&quot;%s&quot;, name);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="变量作用域"><a href="#变量作用域" class="header-anchor">#</a> 变量作用域</h2> <p>当你在 C 程序中定义一个变量时，根据你声明它的位置，它会有一个不同的 作用域（scope）。</p> <p>这意味着它将会在某些地方可用，而在其它地方不可用。</p> <p>该位置决定了两种类型的变量：</p> <ul><li>全局变量（global variables）</li> <li>局部变量（local variables）</li></ul> <p>这就是区别：在函数内部声明的变量就是局部变量，定义在函数外部的变量就是全局变量，比如这个示例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int age = 37;
+
+int main(void) {
+  /* ... */
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>全局变量可以从程序中的任何一个函数访问，它们在整个程序的执行过程中都是可用的，直到程序结束。</p> <h2 id="静态变量"><a href="#静态变量" class="header-anchor">#</a> 静态变量</h2> <p>在函数内部，你可以使用 static 关键字初始化一个 静态变量（static variable）。</p> <p>我说了“在函数内部”，因为全局变量默认就是静态的，所以没有必要再添加这个关键字。</p> <p>什么是静态变量？静态变量在没有声明初始值的时候会被初始化为 0，并且它会在函数调用中保持该值。</p> <p>考虑这个函数：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int incrementAge() {
+  int age = 0;
+  age++;
+  return age;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>如果我们调用一次 incrementAge()，我们将会得到返回值 1。如果我们再调用一次，我们总是会得到 1，因为 age 是一个局部变量并且在每次调用该函数的时候都会被重新初始化为 0。</p> <p>如果我们将该函数改为</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int incrementAge() {
+  static int age = 0;
+  age++;
+  return age;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>现在我们每调用一次这个函数，我们就会得到一个增加了的值：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>printf(&quot;%d\n&quot;, incrementAge());
+
+printf(&quot;%d\n&quot;, incrementAge());
+
+printf(&quot;%d\n&quot;, incrementAge());
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>将会给我们</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>1
+2
+3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>我们也可以在 static int age = 0; 中省略初始化 age 为 0 的代码，只写 static int age; ，因为静态变量在创建时会自动设置为 0</p> <h2 id="全局变量"><a href="#全局变量" class="header-anchor">#</a> 全局变量</h2> <p>全局变量可以被程序内的任何函数访问。该访问并不只局限于读取全局变量的值：任何函数都可以更新全局变量的值。</p> <p>因此，全局变量是一种在函数间共享相同数据的一种方式。</p> <p>局部变量的主要不同在于，分配给局部变量的内存会在函数结束之后立即释放。</p> <p>全局变量只在程序结束时才会释放。</p> <h2 id="类型定义"><a href="#类型定义" class="header-anchor">#</a> 类型定义</h2> <p>C 中的 typedef 关键字允许你定义新的类型。</p> <p>我们可以从 C 内置的类型开始创建自己的类型，使用这个语法：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>typedef existingtype NEWTYPE
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>按照惯例，我们创建的新类型通常是大写的。</p> <p>这样可以更加容易区分它，并且可以立即识别出它是一种类型。</p> <p>例如，我们可以定义一个新的 NUMBER 类型，它还是 int：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>typedef int NUMBER
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>一旦你这么做了之后，你就可以定义新的 NUMBER 变量了：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>NUMBER one = 1;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>现在你可能会问：为什么？为什么不直接使用内置的 int 类型呢？</p> <p>嗯，当两个东西搭配在一起的时候，typedef 会变得真的很有用：枚举类型和结构体。</p> <h2 id="枚举类型"><a href="#枚举类型" class="header-anchor">#</a> 枚举类型</h2> <p>使用 <code>typedef</code> 和 <code>enum</code> 关键字，我们可以定义具有指定值的类型。</p> <p>这是 <code>typedef</code> 关键字最重要的使用场景之一。</p> <p>这是枚举类型的语法：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>typedef enum {
+  //值……
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>按照惯例，我们创建的枚举类通常是大写的。</p> <p>这里是一个简单的示例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>typedef enum {
+  true,
+  false
+} BOOLEAN;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>另一个示例是定义一周中的那几个日子：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>typedef enum {
+  monday,  
+  tuesday,
+  wednesday,
+  thursday,
+  friday,
+  saturday,
+  sunday
+} WEEKDAY;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>这里是使用这个枚举类的一个简单程序：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#include &lt;stdio.h&gt;
+
+typedef enum {
+  monday,  
+  tuesday,
+  wednesday,
+  thursday,
+  friday,
+  saturday,
+  sunday
+} WEEKDAY;
+
+int main(void) {
+  WEEKDAY day = monday;
+
+  if (day == monday) {
+    printf(&quot;It's monday!&quot;); 
+  } else {
+    printf(&quot;It's not monday&quot;); 
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>枚举定义中的每个枚举项在内部都与一个整数配对。所以在这个示例中 monday 是 0，tuesday 是 1，以此类推。</p> <p>这意味着对应的条件可以是 if (day == 0) 而不是 if (day == monday)，但是对于我们人类来说，使用名字比数字更合理，所以它是一个非常便利的语法。</p> <h2 id="结构体"><a href="#结构体" class="header-anchor">#</a> 结构体</h2> <p>利用 struct 关键字，我们可以使用基本的 C 类型创建复杂的数据结构。</p> <p>结构体是一组由不同类型的值组成的集合。C 中的数组被限制为一种类型，所以结构体在很多用例中会显得非常有趣。</p> <p>这里是结构体的语法：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>struct &lt;structname&gt; {
+  //变量……
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>示例</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>struct person {
+  int age;
+  char *name;
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>通过将变量添加到右花括号之后，分号之前，你可以声明类型为该结构体的变量，就像这样</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>struct person {
+  int age;
+  char *name;
+} flavio;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>或者多个变量也行，就像这样：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>struct person {
+  int age;
+  char *name;
+} flavio, people[20];
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>我们也可以稍后再声明变量，使用这个语法：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>struct person {
+  int age;
+  char *name;
+};
+
+struct person flavio;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>我们可以在声明的时候初始化一个结构体：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>struct person {
+  int age;
+  char *name;
+};
+
+struct person flavio = { 37, &quot;Flavio&quot; };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>一旦定义了结构体，我们就可以使用一个点（.）来访问它里面的值了：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>struct person {
+  int age;
+  char *name;
+};
+
+struct person flavio = { 37, &quot;Flavio&quot; };
+printf(&quot;%s, age %u&quot;, flavio.name, flavio.age)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>按照惯例，我们使用 typedef 创建的结构体通常是大写的。</p> <p>现在，我们可以像这样声明一个新的 PERSON 变量：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>PERSON flavio;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>并且我们可以用这种方式在声明的时候初始化它们：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>PERSON flavio = { 37, &quot;Flavio&quot; };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="命令行参数"><a href="#命令行参数" class="header-anchor">#</a> 命令行参数</h2> <p>在 C 程序中，你可能需要在命令启动时从命令行接收参数。</p> <p>对于简单的需求而言，你只需要将 main() 函数的签名从</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int main(void)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>修改为</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int main (int argc, char *argv[])
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li><p>argc 是一个整数，包含从命令行提供的参数的数量。</p></li> <li><p>argv 是一个字符串数组。</p></li></ul> <p>当程序开始运行时，我们用这两个参数给主函数提供参数。</p> <div class="custom-block warning"><p class="title">注意</p><p>argv 数组中总是至少有一个元素：程序的名字。</p></div><p>咱们以我们用来运行程序的 C 编译器作为示例吧，就像这样</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>gcc hello.c -o hello
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>如果这就是我们的程序，我们的 argc 将会是 4，argv 将是一个包含以下内容的数组：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>gcc
+hello.c
+-o
+hello
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>咱们写一个打印它收到的参数的程序吧：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#include &lt;stdio.h&gt;
+
+int main (int argc, char *argv[]) {
+  for (int i = 0; i &lt; argc; i++) {
+    printf(&quot;%s\n&quot;, argv[i]);
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="头文件"><a href="#头文件" class="header-anchor">#</a> 头文件</h2> <p>简单的程序可以直接放在单个文件中。但是当你的程序变大，将它放在单个文件中就不可能了。</p> <p>你可以将程序一些部分移动到一个单独的文件中，然后创建一个 头文件。</p> <p>头文件看起来就像普通的 C 文件一样，但是它是以 <code>.h</code> 而不是 <code>.c</code> 结尾的。它里面的内容是 声明，而不是函数的实现和程序的其它部分。</p> <p>你已经在第一次使用 printf() 函数或其它 I/O 函数的时候使用过头文件了，如果你要使用它，需要输入以下内容：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#include &lt;stdio.h&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>#include 是一个预处理器指令。
+该预处理器会在标准库中寻找 <code>stdio.h</code> 文件，因为你使用了花括号包裹它。若要包含你自己的头文件，你需要使用引号（&quot;），就像这样：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#include &quot;myfile.h&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>上述代码会让预处理器在当前文件夹内寻找 myfile.h。</p> <p>你也可以使用文件夹结构的库：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#include &quot;myfolder/myfile.h&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>咱们看一个示例。这个程序计算自给定年份以来的年数：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#include &lt;stdio.h&gt;
+
+int calculateAge(int year) {
+  const int CURRENT_YEAR = 2020;
+  return CURRENT_YEAR - year;
+}
+
+int main(void) {
+  printf(&quot;%u&quot;, calculateAge(1983));
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>假设我想将 <code>caculateAge</code> 函数移到一个单独的文件中。</p> <p>我创建一个名为 <code>calculate_age.c</code> 的文件：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int calculateAge(int year) {
+  const int CURRENT_YEAR = 2020;
+  return CURRENT_YEAR - year;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>我还创建了一个名为 <code>calculate_age.h</code> 的文件，我在其中放入了 函数原型，除了函数体，它与 <code>.c</code> 文件中的函数完全相同</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int calculateAge(int year);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>现在在主 .c 文件中，我们可以移除 <code>calculateAge()</code> 函数的定义，并且我们可以导入 <code>calculate_age.h</code> ，它会让 <code>calculateAge()</code> 函数可用</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#include &lt;stdio.h&gt;
+#include &quot;calculate_age.h&quot;
+
+int main(void) {
+  printf(&quot;%u&quot;, calculateAge(1983));
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>别忘了编译多个文件组成的程序，你需要在命令行中列出它们，就像这样：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>gcc -o main main.c calculate_age.c
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-ac050c62><li class="level-2" data-v-ac050c62><a href="/learn-FE/c/#变量与类型" class="sidebar-link reco-side-变量与类型" data-v-ac050c62>变量与类型</a></li><li class="level-3" data-v-ac050c62><a href="/learn-FE/c/#整数" class="sidebar-link reco-side-整数" data-v-ac050c62>整数</a></li><li class="level-3" data-v-ac050c62><a href="/learn-FE/c/#无符号整数" class="sidebar-link reco-side-无符号整数" data-v-ac050c62>无符号整数</a></li><li class="level-3" data-v-ac050c62><a href="/learn-FE/c/#浮点数" class="sidebar-link reco-side-浮点数" data-v-ac050c62>浮点数</a></li><li class="level-2" data-v-ac050c62><a href="/learn-FE/c/#常量" class="sidebar-link reco-side-常量" data-v-ac050c62>常量</a></li><li class="level-2" data-v-ac050c62><a href="/learn-FE/c/#数组" class="sidebar-link reco-side-数组" data-v-ac050c62>数组</a></li><li class="level-2" data-v-ac050c62><a href="/learn-FE/c/#字符串" class="sidebar-link reco-side-字符串" data-v-ac050c62>字符串</a></li><li class="level-2" data-v-ac050c62><a href="/learn-FE/c/#指针" class="sidebar-link reco-side-指针" data-v-ac050c62>指针</a></li><li class="level-2" data-v-ac050c62><a href="/learn-FE/c/#函数" class="sidebar-link reco-side-函数" data-v-ac050c62>函数</a></li><li class="level-2" data-v-ac050c62><a href="/learn-FE/c/#输入与输出" class="sidebar-link reco-side-输入与输出" data-v-ac050c62>输入与输出</a></li><li class="level-3" data-v-ac050c62><a href="/learn-FE/c/#scanf" class="sidebar-link reco-side-scanf" data-v-ac050c62>scanf()</a></li><li class="level-2" data-v-ac050c62><a href="/learn-FE/c/#变量作用域" class="sidebar-link reco-side-变量作用域" data-v-ac050c62>变量作用域</a></li><li class="level-2" data-v-ac050c62><a href="/learn-FE/c/#静态变量" class="sidebar-link reco-side-静态变量" data-v-ac050c62>静态变量</a></li><li class="level-2" data-v-ac050c62><a href="/learn-FE/c/#全局变量" class="sidebar-link reco-side-全局变量" data-v-ac050c62>全局变量</a></li><li class="level-2" data-v-ac050c62><a href="/learn-FE/c/#类型定义" class="sidebar-link reco-side-类型定义" data-v-ac050c62>类型定义</a></li><li class="level-2" data-v-ac050c62><a href="/learn-FE/c/#枚举类型" class="sidebar-link reco-side-枚举类型" data-v-ac050c62>枚举类型</a></li><li class="level-2" data-v-ac050c62><a href="/learn-FE/c/#结构体" class="sidebar-link reco-side-结构体" data-v-ac050c62>结构体</a></li><li class="level-2" data-v-ac050c62><a href="/learn-FE/c/#命令行参数" class="sidebar-link reco-side-命令行参数" data-v-ac050c62>命令行参数</a></li><li class="level-2" data-v-ac050c62><a href="/learn-FE/c/#头文件" class="sidebar-link reco-side-头文件" data-v-ac050c62>头文件</a></li></ul></main></div> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----></div></div>
+    <script src="/learn-FE/assets/js/app.aebeae26.js" defer></script><script src="/learn-FE/assets/js/8.e87f47a6.js" defer></script><script src="/learn-FE/assets/js/1.58730aa2.js" defer></script><script src="/learn-FE/assets/js/147.03b197c6.js" defer></script><script src="/learn-FE/assets/js/50.3966f648.js" defer></script>
+  </body>
+</html>
